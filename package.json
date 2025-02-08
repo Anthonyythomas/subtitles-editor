@@ -1,12 +1,40 @@
 {
   "name": "subtitles-editor",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Anthonyythomas/subtitles-editor.git"
+  },
+  "keywords": [
+    "subtitles",
+    "editor",
+    "srt",
+    "srt-editor",
+    "vtt-editor",
+    "vtt",
+    "webvtt",
+    "caption",
+    "caption-editor",
+    "subtitle-editor",
+    "subtitle-tool",
+    "subtitle-viewer",
+    "transcription",
+    "video-subtitles",
+    "react",
+    "subtitles-manager"
+  ],
+  "author": {
+    "name": "Anthony Thomas",
+    "url": "https://github.com/Anthonyythomas"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Anthonyythomas/subtitles-editor/issues"
+  },
+  "homepage": "https://github.com/Anthonyythomas/subtitles-editor#readme",
+  "description": "A React component for editing SRT and VTT subtitles directly in a textarea, styled with TailwindCSS."
 }
