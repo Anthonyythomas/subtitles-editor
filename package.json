@@ -1,10 +1,22 @@
 {
   "name": "subtitles-editor",
   "version": "0.0.1",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    "import": "./dist/index.esm.js",
+    "require": "./dist/index.js"
   },
+  "scripts": {
+    "dev": "rollup -c --watch",
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build",
+    "test": "jest"
+  },
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git@github.com:Anthonyythomas/subtitles-editor.git"
@@ -36,5 +48,30 @@
     "url": "https://github.com/Anthonyythomas/subtitles-editor/issues"
   },
   "homepage": "https://github.com/Anthonyythomas/subtitles-editor#readme",
-  "description": "A React component for editing SRT and VTT subtitles directly in a textarea, styled with TailwindCSS."
+  "description": "A React component for editing SRT and VTT subtitles directly in a textarea, styled with TailwindCSS.",
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.8",
+    "@babel/plugin-transform-react-jsx": "^7.25.9",
+    "@babel/preset-env": "^7.26.7",
+    "@babel/preset-react": "^7.26.3",
+    "@jridgewell/sourcemap-codec": "^1.5.0",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^28.0.2",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.2.0",
+    "autoprefixer": "^10.4.20",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "postcss": "^8.5.1",
+    "rollup": "^4.34.6",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "tailwindcss": "^3.4.17"
+  }
 }
